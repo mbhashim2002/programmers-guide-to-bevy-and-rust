@@ -4,6 +4,8 @@ Documenting my progress for going through [The Impatient Programmer's Guide to B
 
 ## Assets
 
+Below assets sourced from [Universal LPC Spritesheet Generator](https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/)
+
 body/bodies/male/walk.png
 	- Note: see details at https://opengameart.org/content/lpc-character-bases; 'Thick' Male Revised Run/Climb by JaidynReiman (based on ElizaWy's LPC Revised)
 	- Licenses:
