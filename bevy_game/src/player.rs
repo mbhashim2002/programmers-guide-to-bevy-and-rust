@@ -121,13 +121,12 @@ fn animate_player(
 
     // initially, atlas.index = 90 since in spawn_player atlas_index_for(facing, 0) evaluates to 90 which is then assigned to start_index
     let mut current_col = atlas.index % WALK_FRAMES; // 90 % 9 = 0, start on column 0
-    let mut current_row = atlas.index / WALK_FRAMES; // 90 / 9 = 10, start on row 10 (facing down)
+    let current_row = atlas.index / WALK_FRAMES; // 90 / 9 = 10, start on row 10 (facing down)
 
     // If the facing changed (or we weren't on a walking row), snap to the first frame of the target row
     if current_row != target_row {
         atlas.index = row_start_index(anim.facing); // e.g. player starts facing left, row_start_index(Facing::Left) evaluates to 81
         current_col = 0; // go to the start of the row
-        current_row = target_row;
         timer.reset();
     }
 
